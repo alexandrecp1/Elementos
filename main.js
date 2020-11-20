@@ -3,12 +3,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var Elementos_1 = __importDefault(require("./Elementos"));
+var herege_1 = require("./herege");
 var prompt_sync_1 = __importDefault(require("prompt-sync"));
-var hidro = new Elementos_1.default("Hidrogênio", 1, "H", "Era utilizado em dirigiveis");
-var oxi = new Elementos_1.default("Oxigênio", 8, "O", "Terceiro elemento mais abundante no universo!");
-var carb = new Elementos_1.default("Carbono", 6, "C", " Existem mais de três milhões de compostos distintos derivados do carbono");
-var nitro = new Elementos_1.default("Nitrogênio", 7, "N", "O nitrogênio é o elemento mais caro dos fertilizantes");
+var hidro = new herege_1.herege("Hidrogênio", 1, "H", "Era utilizado em dirigiveis");
+var oxi = new herege_1.herege("Oxigênio", 8, "O", "Terceiro elemento mais abundante no universo!");
+var carb = new herege_1.herege("Carbono", 6, "C", " Existem mais de três milhões de compostos distintos derivados do carbono");
+var nitro = new herege_1.herege("Nitrogênio", 7, "N", "O nitrogênio é o elemento mais caro dos fertilizantes");
 var teclado = prompt_sync_1.default();
 var option = 0;
 while (option != 9) {
@@ -18,6 +18,7 @@ while (option != 9) {
     console.log('|3. Carbono                      |');
     console.log('|4. Nitrogênio                   |');
     console.log('|5. Wiki                         |');
+    console.log('|6. Multiplicar                  |');
     console.log('|9. Sair Do Programa             |');
     console.log('+================================+');
     option = +teclado("Escolha Uma Ação: ");

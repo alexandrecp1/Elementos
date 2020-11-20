@@ -1,10 +1,11 @@
-import Elementos from "./Elementos";
+import { Elementos } from "./Elementos";
+import { herege } from "./herege"
 import prompt from "prompt-sync"; 
 
-let hidro: Elementos = new Elementos("Hidrogênio", 1, "H", "Era utilizado em dirigiveis");
-let oxi: Elementos = new Elementos("Oxigênio", 8, "O", "Terceiro elemento mais abundante no universo!");
-let carb: Elementos = new Elementos("Carbono", 6, "C", " Existem mais de três milhões de compostos distintos derivados do carbono" );
-let nitro: Elementos = new Elementos("Nitrogênio", 7, "N", "O nitrogênio é o elemento mais caro dos fertilizantes" );
+let hidro: Elementos = new herege("Hidrogênio", 1, "H", "Era utilizado em dirigiveis");
+let oxi: Elementos = new herege("Oxigênio", 8, "O", "Terceiro elemento mais abundante no universo!");
+let carb: Elementos = new herege("Carbono", 6, "C", " Existem mais de três milhões de compostos distintos derivados do carbono" );
+let nitro: Elementos = new herege("Nitrogênio", 7, "N", "O nitrogênio é o elemento mais caro dos fertilizantes" );
 
 let teclado = prompt();
 let option: number = 0;
@@ -17,6 +18,7 @@ console.log('|2. Oxigênio                     |');
 console.log('|3. Carbono                      |');
 console.log('|4. Nitrogênio                   |');
 console.log('|5. Wiki                         |');
+console.log('|6. Multiplicar                  |');
 console.log('|9. Sair Do Programa             |');
 console.log('+================================+');
 
@@ -236,8 +238,6 @@ switch (option) {
                                       }
                                     }
                             break;
-        
-
     default:
         break;
  }

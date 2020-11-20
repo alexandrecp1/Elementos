@@ -1,4 +1,4 @@
-export default class Elementos {
+export class Elementos {
         protected _nome: string;
         protected _n_atomico: number;
         protected _simbolo: string;

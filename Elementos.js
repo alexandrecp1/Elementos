@@ -1,11 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Elementos = void 0;
 var Elementos = /** @class */ (function () {
     function Elementos(nome, n_atomico, simbolo, curiosidade) {
         this._nome = nome;
         this._n_atomico = n_atomico;
         this._simbolo = simbolo;
         this._curiosidade = curiosidade;
+        this._mult = 1;
     }
     Object.defineProperty(Elementos.prototype, "n_atomico", {
         get: function () {
@@ -30,4 +32,4 @@ var Elementos = /** @class */ (function () {
     });
     return Elementos;
 }());
-exports.default = Elementos;
+exports.Elementos = Elementos;
