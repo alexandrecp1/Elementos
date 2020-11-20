@@ -21,4 +21,3 @@ export default class Elementos {
                 return this._curiosidade
         }
 }
-
